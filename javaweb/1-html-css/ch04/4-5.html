@@ -1,0 +1,62 @@
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    p {
+      width: 250px;
+      height: 150px;
+      border: 3px solid black;
+    }
+
+    p:nth-child(1) {
+      /*요소(element)의 크기보다 컨텐츠가 클 때 숨김처림*/
+      /*overflow:남침*/
+      /*hidden:숨김*/
+      overflow: hidden;
+    }
+
+    p:nth-child(2) {
+      overflow: scroll;
+    }
+
+    p:nth-child(3) {
+      overflow-y: scroll;
+      /*가로의 스크롤은 만들지 않는다 (2)번이랑은 다름*/
+    }
+
+    P:nth-child(4) {
+      overflow-y: auto;
+    }
+
+    p:nth-child(5) {
+      overflow: hidden;
+      /*컨텐츠가 내용 밖으로 넘어서면 말 줄임표(...)*/
+      text-overflow: ellipsis;
+      /*빈공간은 기본적으로 밑으로 내림*/
+      /*밑으로 안내림,옆으로 이어짐*/
+      /*text-overflow+nowrap을 같이써야 말줄임표로 표현이 가능함!*/
+      white-space: nowrap;
+      height: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam alias nam recusandae in quidem repudiandae
+    facilis beatae illo officiis? Fugit dicta provident cumque ex dolorem labore beatae officia nihil itaque.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam alias nam recusandae in quidem repudiandae
+    facilis beatae illo officiis? Fugit dicta provident cumque ex dolorem labore beatae officia nihil itaque.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam alias nam recusandae in quidem repudiandae
+    facilis beatae illo officiis? Fugit dicta provident cumque ex dolorem labore beatae officia nihil itaque.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam alias nam recusandae in quidem repudiandae
+    facilis beatae illo officiis? Fugit dicta provident cumque ex dolorem labore beatae officia nihil itaque.</p>
+  <p title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam alias nam recusandae in quidem repudiandae
+  facilis beatae illo officiis? Fugit dicta provident cumque ex dolorem labore beatae officia nihil itaque.">Lorem
+    ipsum dolor sit amet consectetur adipisicing elit. Laboriosam alias nam recusandae in quidem
+    repudiandae
+    facilis beatae illo officiis? Fugit dicta provident cumque ex dolorem labore beatae officia nihil itaque.</p>
+
+</body>
+
+</html>

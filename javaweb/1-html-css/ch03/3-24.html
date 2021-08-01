@@ -1,0 +1,40 @@
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    a {
+      /*글자 꾸밈요소를 해제*/
+      /*마우스 가져다대면 나오는 밑줄 없애줌*/
+      text-decoration: none;
+      color: brown;
+    }
+
+    /*이미 방문한 링크일 때 적용*/
+    a:visited {
+      color: antiquewhite;
+    }
+
+    /*href속성이 있으면 적용*/
+    a:link {
+      color: brown;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      /*마우스커서 올릴때 크기가 커서 커지게함*/
+      font-size: 115%;
+      /*마우스 커서로 가져다대면 뒷배경색이 적용됨*/
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <!--<h1><a>링크</a></h1>-->
+  <h1><a href="http://www.naver.com">네이버</a></h1>
+  <h1><a href="http://www.google.com">구글</a></h1>
+
+</body>
+
+</html>
