@@ -1,0 +1,35 @@
+<html>
+
+<body>
+  <script>
+    function multiplyNumeric(obj) {
+      for (let prop in obj) {
+        if (typeof obj[prop] == "number") {
+          obj[prop] *= 2;
+        }
+      }
+
+      return obj;
+    }
+    //전
+    let menu = {
+      width: 200,
+      height: 300,
+      title: "My menu"
+    };
+
+    multiplyNumeric(menu);
+
+
+    //후
+    let menu = {
+      width: 400,
+      height: 600,
+      title: "My menu"
+    };
+
+    console.log(menu);
+  </script>
+</body>
+
+</html>
