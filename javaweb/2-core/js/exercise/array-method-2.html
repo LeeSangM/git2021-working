@@ -1,0 +1,17 @@
+<html>
+
+<body>
+  <script>
+    function filterRange(arr, a, b) {
+      return arr.filter(item => item >= a && item <= max);
+    }
+
+    let arr = [5, 3, 8, 1];
+    let filtered = filterRange(arr, 1, 4);
+    //1,4 사이에 없는 요소 모두 제거
+    console.log(filtered); //3,1
+    console.log(arr); // 5,3,8,1
+  </script>
+</body>
+
+</html>
